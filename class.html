@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
@@ -21,25 +19,9 @@
         <p>This page is intentionally blank. See demo.html for an example.</p>
     </main>
 
-    <footer class="site-footer">
-        <!-- add site-wide footer content here -->
+    <footer>
+        <p>&copy; 2025 Simple Website Example</p>
     </footer>
 
-    <!-- Leave this as the last thing before the closing /body tag -->
-        <!-- jQuery via CDN with modern dynamic fallback -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
-        <script>
-            if (!window.jQuery) {
-                const fallback = document.createElement('script');
-                fallback.src = 'js/vendor/jquery-3.7.1.min.js';
-                fallback.defer = true;
-                document.head.appendChild(fallback);
-            }
-        </script>
-    <script src="js/main.js" defer></script>
-    <nav id="pagination" aria-label="Landmark pagination">
-            <a class="btn" rel="prev" href="index.html">← Previous</a>
-            <a class="btn" rel="next" href="dice.html">Next →</a>
-    </nav>
 </body>
 </html>

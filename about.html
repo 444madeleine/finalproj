@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Basic responsive page starter with semantic HTML, modern CSS, and accessibility-friendly patterns.">
-    <title>Basic Responsive Page</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>A Girls Guide to DnD</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-        <!-- add site wide header content here -->
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="characters.html">How To Build Your Characters</a></li>
+                <li><a href="class.html">All About Classes</a></li>
+                <li><a href="dice.html">Dice Tips</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main id="main">
-        <!-- add main page content here -->
-        <p>This page is intentionally blank. See demo.html for an example.</p>
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>This is the first section of the website. It gives a brief introduction to the site's purpose.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer basic web design, coding tutorials, and coffee recommendations!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>You can reach us at example@email.com.</p>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
 
-    <footer class="site-footer">
-        <!-- add site-wide footer content here -->
+    <footer>
+        <p>&copy; 2025 Simple Website Example</p>
     </footer>
 
-    <!-- Leave this as the last thing before the closing /body tag -->
-        <!-- jQuery via CDN with modern dynamic fallback -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
-        <script>
-            if (!window.jQuery) {
-                const fallback = document.createElement('script');
-                fallback.src = 'js/vendor/jquery-3.7.1.min.js';
-                fallback.defer = true;
-                document.head.appendChild(fallback);
-            }
-        </script>
-    <script src="js/main.js" defer></script>
-    <nav id="pagination" aria-label="Landmark pagination">
-            <a class="btn" rel="prev" href="characters.html">← Previous</a>
-            <a class="btn" rel="next" href="index.html">Next →</a>
-        </nav>
 </body>
-
 </html>
