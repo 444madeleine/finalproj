@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>A Girls Guide to DnD</title>
-    <link rel="stylesheet" href="styles.css">
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Basic responsive page starter with semantic HTML, modern CSS, and accessibility-friendly patterns.">
+    <title>A Girls Guide to DnD</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>About</h1>
         <nav>
-            <ul>
-                <li><a href="characters.html">How To Build Your Characters</a></li>
-                <li><a href="class.html">All About Classes</a></li>
-                <li><a href="dice.html">Dice Tips</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
+            <a href="characters.html">Characters</a>
+            <a href="class.html">Classes</a>
+            <a href="dice.html">Dice Tips</a>
+            <a href="index.html">Home</a>
         </nav>
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>This is the first section of the website. It gives a brief introduction to the site's purpose.</p>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>We offer basic web design, coding tutorials, and coffee recommendations!</p>
-        </section>
-
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>You can reach us at example@email.com.</p>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <button type="submit">Send</button>
-            </form>
-        </section>
+        <h3> I decided to make this website as a starting guide for women who want to start playing DnD. I remember when I started, I was so overwhelmed by
+            the prospect of starting, but as I began, the rules and gameplay became easier to understand. I hope this website helps you on your journey, as I wish I had a similar guide when I began. Good luck, and may your rolls be ever in your favor!
+        </h3>
+        <figure>
+            <img src="images/pexels-allthings-real-1176834458-23522436.jpg" alt="Dice">
+            <figcaption>
+                Photo by <a href="https://www.pexels.com/photo/green-game-dices-with-many-sides-23522436/">allthings real</a>
+            </figcaption>
+        </figure>
     </main>
 
     <footer>
-        <p>&copy; 2025 Simple Website Example</p>
+        <p>&copy; Madeleine Rockwitz</p>
     </footer>
 
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+        <script>
+            if (!window.jQuery) {
+                const fallback = document.createElement('script');
+                fallback.src = 'js/vendor/jquery-3.7.1.min.js';
+                fallback.defer = true;
+                document.head.appendChild(fallback);
+            }
+          <nav id="pagination" aria-label="Landmark pagination">
+            <a class="btn" rel="next" href="class.html">Next →</a>
+        </nav> </script>
+    <script src="js/main.js" defer></script>
 </body>
+
+
 </html>

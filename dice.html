@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Basic responsive page starter with semantic HTML, modern CSS, and accessibility-friendly patterns.">
     <title>A Girls Guide to DnD</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
         <h1>Welcome to My Website</h1>
         <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="characters.html">How To Build Your Characters</a></li>
-                <li><a href="class.html">All About Classes</a></li>
-                <li><a href="index.html">Home</a></li>
-            </ul>
+            <a href="about.html">About</a>
+            <a href="characters.html">Characters</a>
+            <a href="class.html">Classes</a>
+            <a href="index.html">Home</a>
         </nav>
     </header>
 
     <main>
         <section id="about">
-            <h2>About Us</h2>
-            <p>This is the first section of the website. It gives a brief introduction to the site's purpose.</p>
+            <h2>Dice</h2>
+            <p>There are many types of dice used in tabletop RPGs, each with its own purpose and significance. Understanding the different types of dice and their uses can enhance your gaming experience.</p>
         </section>
 
         <section id="services">
-            <h2>Our Services</h2>
-            <p>We offer basic web design, coding tutorials, and coffee recommendations!</p>
+            <h2>Twenty Sided Dice</h2>
+            <p>The twenty-sided die, or d20, is the most iconic die in tabletop RPGs. It's used for a wide variety of checks, from attack rolls to skill checks, and its results can have a significant impact on the game.</p>
         </section>
 
         <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>You can reach us at example@email.com.</p>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <button type="submit">Send</button>
-            </form>
+            <h2>Other Dice</h2>
+            <p>In addition to the d20, there are many other types of dice used in tabletop RPGs, each serving a unique purpose. These include:</p>
+            <ul>
+                <li>d4 (four-sided die): Often used for determining damage for smaller weapons.</li>
+                <li>d6 (six-sided die): Commonly used in various games, including classic board games.</li>
+                <li>d8 (eight-sided die): Frequently used for weapon damage and other checks.</li>
+                <li>d10 (ten-sided die): Used for percentile rolls and certain class features.</li>
+                <li>d12 (twelve-sided die): Less common, but used for specific weapons and abilities.</li>
+            </ul>
+            <h3>Your Dungeon Master (DM) can provide guidance on which dice to use for different situations in your game.</h3>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Simple Website Example</p>
+        <p>&copy; Madeleine Rockwitz</p>
     </footer>
-
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+        <script>
+            if (!window.jQuery) {
+                const fallback = document.createElement('script');
+                fallback.src = 'js/vendor/jquery-3.7.1.min.js';
+                fallback.defer = true;
+                document.head.appendChild(fallback);
+            }
+          <nav id="pagination" aria-label="Landmark pagination">
+            <a class="btn" rel="next" href="class.html">Next →</a>
+        </nav> </script>
+    <script src="js/main.js" defer></script>
 </body>
+
 </html>

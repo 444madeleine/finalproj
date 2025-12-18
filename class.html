@@ -1,27 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Basic responsive page starter with semantic HTML, modern CSS, and accessibility-friendly patterns.">
-    <title>Basic Responsive Page</title>
+    <meta name="description"
+        content="Basic responsive page starter with semantic HTML, modern CSS, and accessibility-friendly patterns.">
+    <title>A Girls Guide to DnD</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-        <!-- add site wide header content here -->
-    </header>
 
-    <main id="main">
-        <!-- add main page content here -->
-        <p>This page is intentionally blank. See demo.html for an example.</p>
+<body>
+
+    <div class="section header">
+        <header>
+            <h1>All About Classes</h1>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="characters.html">Characters</a>
+            <a href="dice.html">Dice Tips</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    </div>
+
+    <main>
+        <section id="about">
+            <h2>What are Classes?</h2>
+            <p>Classes are archetypes defining a character's skills, abilities, and role, with 13 official 5th Edition
+                classes.
+                I've included my favorite classes for beginner players, that have easy game mechanics and have potential for interesting backstories </p>
+        </section>
+        <figure>
+            <img src="images/pexels-pixabay-208674.jpg" alt="Armor">
+            <figcaption>
+                Photo by <a href="https://www.pexels.com/photo/grayscale-photography-of-chainmails-and-helmets-on-ground-208674/">Pixabay</a>
+            </figcaption>
+        </figure>
+
+        <div class="card-list">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Barbarians</h3>
+                    <p>Barbarians are fierce melee combatants using rage.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image"></div>
+                <div class="card-content">
+                    <h3>Fighters</h3>
+                    <p>Fighters are masters of weapons and tactics.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"></div>
+                <div class="card-content">
+                    <h3>Rogues</h3>
+                    <p>Rogues are stealthy experts in traps, skills, and precision strikes.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"></div>
+                <div class="card-content">
+                    <h3>Sorcerers</h3>
+                    <p>Sorcerers are innate, charismatic spellcasters.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"></div>
+                <div class="card-content">
+                    <h3>Warlock</h3>
+                    <p>A Warlock's power is drawn from otherworldly patrons.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="image"></div>
+                <div class="card-content">
+                    <h3>Wizard</h3>
+                    <p>Wizards are studious, powerful arcane spell casters.</p>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>
-        <p>&copy; 2025 Simple Website Example</p>
+        <p>&copy; Madeleine Rockwitz</p>
     </footer>
-
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+        <script>
+            if (!window.jQuery) {
+                const fallback = document.createElement('script');
+                fallback.src = 'js/vendor/jquery-3.7.1.min.js';
+                fallback.defer = true;
+                document.head.appendChild(fallback);
+            }
+          <nav id="pagination" aria-label="Landmark pagination">
+            <a class="btn" rel="next" href="class.html">Next →</a>
+        </nav> </script>
+    <script src="js/main.js" defer></script>
 </body>
+
 </html>

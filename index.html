@@ -4,38 +4,45 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Basic responsive page starter with semantic HTML, modern CSS, and accessibility-friendly patterns.">
-    <title>Basic Responsive Page</title>
+    <meta name="description"
+        content="Basic responsive page starter with semantic HTML, modern CSS, and accessibility-friendly patterns.">
+    <title>A Girls Guide to DnD</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
+ <div class="section header">
     <header>
         <h1>A Girls Guide to DND</h1>
         <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="class.html">All About Classes</a></li>
-                <li><a href="characters.html">How To Build Your Characters</a></li>
-                <li><a href="dice.html">Dice Tips</a></li>
-            </ul>
+            <a href="about.html">About</a>
+            <a href="class.html">Classes</a>
+            <a href="characters.html">Characters</a>
+            <a href="dice.html">Dice Tips</a>
         </nav>
     </header>
+</div>
 
     <main>
-        <section id="about">
-            <h2>Are you ready to stop watching from the sidelines and start rolling the dice?</h2>
-            <p> Dungeons and Dragons is a world of infinite imagination, epic storytelling, and incredible friendship.
-                But learning the rules can feel overwhelming! This website is a friendly, no-pressure guide created by
-                women for women to demystify DND and help you take your first courageous steps into the roleplaying
-                adventure. </p>
-        </section>
-
+        <div class="section about">
+            <section id="about">
+                <h2>Are you ready to start rolling the dice?</h2>
+                <h3> Dungeons and Dragons is a world of imagination, storytelling, and friendship.
+                    Learning the rules can feel overwhelming, so this website to be a guide created by
+                    women for women to learn more about DND and help you take on your first campaign! </h3>
+            </section>
+            </div>
+        <figure>
+            <img src="images/pexels-nika-benedictova-24565203-20393802.jpg" alt="Dice">
+            <figcaption>
+                Photo by <a href="https://www.pexels.com/photo/close-up-of-tarot-cards-and-game-dice-20393802/">Nika Benedictova</a>
+            </figcaption>
+        </figure>
+        <div class="section-typography">
         <section id="services">
             <h2>Why DnD?</h2>
-            <p>It's more than just a game, it's a creative outlet where you can become anyone. DnD lets you:</p>
+            <h3>It's more than just a game, it's a creative outlet where you can become anyone. DnD lets you:</h3>
             <ul>
                 <li>Be the Hero: Create complex, powerful, and nuanced characters who drive the story.</li>
                 <li>Boost Confidence: Practice communication, public speaking, and quick thinking in a supportive
@@ -43,32 +50,34 @@
                 <li>Build Community: Forge lifelong friendships and connect with amazing people in your party.</li>
             </ul>
         </section>
+        </div>
 
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>You can reach us at example@email.com.</p>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <button type="submit">Send</button>
-            </form>
-        </section>
+        <div class="section-footer">
+            <h3>Get Started with DnD</h3>
+            <p>Ready to embark on your DnD adventure? Here are some tips to help you get started:</p>
+            <ul>
+                <li>Gather Your Supplies: You'll need dice, character sheets, and a group of friends!</li>
+                <li>Choose Your Character: Think about the kind of hero you want to play.</li>
+            <li>Find a Group: Join a local game store or online community to connect with other players.</li>
+        </ul>
+        </div>
+
     </main>
 
     <footer>
         <p>&copy; By Madeleine Rockwitz</p>
     </footer>
 
-    <!-- Leave this as the last thing before the closing /body tag -->
-        <!-- jQuery via CDN with modern dynamic fallback -->
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
-        <script>
-            if (!window.jQuery) {
-                const fallback = document.createElement('script');
-                fallback.src = 'js/vendor/jquery-3.7.1.min.js';
-                fallback.defer = true;
-                document.head.appendChild(fallback);
-            }
-          <nav id="pagination" aria-label="Landmark pagination">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+    <script>
+        if (!window.jQuery) {
+            const fallback = document.createElement('script');
+            fallback.src = 'js/vendor/jquery-3.7.1.min.js';
+            fallback.defer = true;
+            document.head.appendChild(fallback);
+        }
+        <nav id="pagination" aria-label="Landmark pagination">
             <a class="btn" rel="next" href="class.html">Next →</a>
         </nav> </script>
     <script src="js/main.js" defer></script>
