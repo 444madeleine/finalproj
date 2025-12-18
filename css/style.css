@@ -18,7 +18,14 @@
     --spacing-md: 16px;
     --spacing-lg: 24px;
     --spacing-xl: 32px;
+    --link-color: #ED4F99; 
+    --link-hover-color: #e31293;
+    --link-visited-color: #320621; /* Distinct visited state */
+    --button-bg: var(--link-color); /* Primary button color (matches link) */
+    --button-hover-bg: var(--link-hover-color); /* Hover button color (matches link hover) */
+    --button-text-color: #ffffff;
 }
+
 body {
     background-color: var(--background-color);
     color: var(--primary-color);
