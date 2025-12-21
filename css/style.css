@@ -170,3 +170,13 @@ video {
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
     }
+    .character-sheet {
+        font-family: 'meow-script-regular', cursive;
+        font-size: 40px;
+        line-height: 1.6;
+        color: #360619;
+        background-color: #de4beb;
+        padding: 20px;
+        border-radius: var(--border-radius);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
