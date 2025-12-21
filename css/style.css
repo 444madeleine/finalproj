@@ -1,0 +1,172 @@
+/* Base styles, including fonts, headings, links, buttons, etc. can be found in base.css */
+
+/* You can copy and paste that CSS into your main style.css or keep it as a separate file and link both in your HTML files. */
+
+/* ====== Add your CSS here ======== */
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Metamorphous&display=swap');
+
+:root {
+    --primary-color: #2C0E3B;
+    --secondary-color: #885495;
+    --background-color: #FF9CFE;
+    --font-primary: Metamorphous, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Boldonse, cursive;
+    --font-heading: Metamorphous, cursive;
+    --border-radius: 12px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --link-color: #ED4F99;
+    --link-hover-color: #e31293;
+    --link-visited-color: #320621;
+
+    --button-bg: var(--link-color);
+    --button-hover-bg: var(--link-hover-color);
+    --button-text-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    font-weight: true;
+    line-height: 1.15;
+    margin-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-xl);
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: 'meow-script-regular', cursive;
+    font-weight: true;
+    line-height: 1.15;
+    margin-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-xl);
+    font-size: 40px;
+
+}
+
+img {
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: min(100% - (2 * var(--spacing-md)), 70ch);
+    margin-inline: auto;
+}
+
+.card-list {
+    display: grid;
+    grid-gap: var(--spacing-lg);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.videoWrapper {
+    position: relative;
+    padding-top: 25px;
+    height: 0;
+    clear: both;
+}
+
+
+.videoWrapper.ratio-16-9 {
+    padding-bottom: 56.25%;
+
+}
+
+
+.videoWrapper.ratio-4-3 {
+    padding-bottom: 75%;
+
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-header, .section-footer {
+    color: #2a0f32;
+    background: #d35fedfa;
+}
+
+ @media (min-width: 600px) {
+        .features {
+            grid-template-columns: 1fr 1fr;
+        }
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (min-width: 900px) {
+        .features {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .boxes {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+        .cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+   
+    @media (min-width: 1800px) {
+        .boxes {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
