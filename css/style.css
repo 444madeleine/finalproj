@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Boldonse&family=Meow+Script&family=Metamorphous&display=swap");
 
 :root {
-    --primary-color: #2C0E3B;
+    --primary-color: #30123e;
     --secondary-color: #885495;
     --background-color: #FF9CFE;
     --font-primary: Metamorphous, serif;
@@ -20,7 +20,7 @@
     --spacing-lg: 24px;
     --spacing-xl: 32px;
     --link-color: #67123a;
-    --link-hover-color: #e31293;
+    --link-hover-color: #663252;
     --link-visited-color: #320621;
 
     --button-bg: var(--link-color);
