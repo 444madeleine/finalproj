@@ -55,7 +55,7 @@ h3 {
 }
 
 p {
-    font-family: 'meow-script-regular', cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, cursive;
     font-weight: true;
     line-height: 1.15;
     margin-bottom: var(--spacing-sm);
